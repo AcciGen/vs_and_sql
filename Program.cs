@@ -20,7 +20,7 @@ class Program
 
             Insert(tableName, fullname, age);
 
-            Console.Write("One more insertion? (Y/n)");
+            Console.Write("One more insertion? (Y/n) >> ");
             if (Console.ReadLine()!.ToUpper() == "N")
             {
                 row = false;
@@ -43,7 +43,7 @@ class Program
 
             Update(tableName, oldname, fullname, age);
 
-            Console.Write("One more update? (Y/n)");
+            Console.Write("One more update? (Y/n) >> ");
             if (Console.ReadLine()!.ToUpper() == "N")
             {
                 row = false;
@@ -59,7 +59,7 @@ class Program
 
             Delete(tableName, fullname);
 
-            Console.Write("One more deletion? (Y/n)");
+            Console.Write("One more deletion? (Y/n) >> ");
             if (Console.ReadLine()!.ToUpper() == "N")
             {
                 row = false;
