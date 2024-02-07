@@ -49,6 +49,23 @@ class Program
                 row = false;
             }
         }
+        GetAll(tableName);
+
+        row = true;
+        while (row)
+        {
+            Console.Write("Enter fullname >> ");
+            fullname = Console.ReadLine()!;
+
+            Delete(tableName, fullname);
+
+            Console.Write("One more deletion? (Y/n)");
+            if (Console.ReadLine()!.ToUpper() == "N")
+            {
+                row = false;
+            }
+        }
+        GetAll(tableName);
 
         Main();
     }
