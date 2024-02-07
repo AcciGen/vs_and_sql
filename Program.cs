@@ -67,7 +67,6 @@ class Program
         }
         GetAll(tableName);
 
-        Main();
     }
 
     public static void GetAll(string tableName)
@@ -85,7 +84,7 @@ class Program
     
             while (result.Read())
             {
-                Console.WriteLine(result[0]);
+                Console.Write($"{result[0]} {result[1]} {result[2]}");
             }
         }
     }
